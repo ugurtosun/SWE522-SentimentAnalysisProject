@@ -194,7 +194,20 @@ code pieces in a documentation, all code parts and results are shown in shared J
 
 ## Result And Discussion
 
-![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.png?raw=true)
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/youtube.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/tiktok.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/whatsapp.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.jpg?raw=true)
+
+
+
 
 
 
