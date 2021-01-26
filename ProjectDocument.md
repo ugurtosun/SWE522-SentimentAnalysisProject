@@ -8,10 +8,7 @@
 
 ## Project Motivation
 
-In the scope of crowd analysis project, we decided to perform a study about sentiment analysis <br>
-with using NLP approach and currently available libraries and technologies. In this direction, our project covers <br>
-sentiment analysis of user reviews of several application categories. These user reviews are collected from <br>
-App Store. This study covers only App Store reviews of application are listed in below;
+In the scope of crowd analysis project, we decided to perform a study about sentiment analysis with using NLP approach and currently available libraries and technologies. In this direction, our project covers sentiment analysis of user reviews of several application categories. These user reviews are collected from App Store. This study covers only App Store reviews of application are listed in below;
 
 Categories: 
 
@@ -55,11 +52,7 @@ In our work, each application category consisting of three application as listed
 
 ## Data Collection
 
-In the data collection part of project, we do not use a ready dataset. We prepared the dataset with <br>
-collecting data from App Store. For this purpose, an open source API (https://data.42matters.com/api/v2.0/ios/apps/reviews) was used to fetch application reviews with respecting date. <br>
-With fetching data from API, we wrote these application reviews to Postgresql database. <br>
-
-The java project which was developed to handle data preparation is available with link in below; <br>
+In the data collection part of project, we do not use a ready dataset. We prepared the dataset with collecting data from App Store. For this purpose, an open source API (https://data.42matters.com/api/v2.0/ios/apps/reviews) was used to fetch application reviews with respecting date. With fetching data from API, we wrote these application reviews to Postgresql database. The java project which was developed to handle data preparation is available with link in below; 
 Also project would be shared with project files.
 
 ```
@@ -76,8 +69,7 @@ In the database columns are;
 * review
 * date
 
-We used actually review data for sentiment analysis. Each app has 100 reviews for each month <br>
-between 2019-01-01 and 2021-01-01. So, totally 2400 reviews were collected for each application. <br>
+We used actually review data for sentiment analysis. Each app has 100 reviews for each month between 2019-01-01 and 2021-01-01. So, totally 2400 reviews were collected for each application.
 Hence, there are 7200 reviews for each category. Total database consisting of almost 36000 review entries. <br>
 
 The .csv form of dataset will be shared with project documentation. 
