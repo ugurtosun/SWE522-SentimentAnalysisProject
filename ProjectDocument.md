@@ -89,10 +89,110 @@ between pre-pandemic and pandemic periods. In method, we collected user reviews 
 We extract some graphics which will be detailed in next parts of document. 
 
 Firstly, we save our work in Jupyter Notebook file because becoming easy to follow steps.  
+.ipynb and .html forms of our final notebook will be shared with project documentation. 
+<br>
+<br>
+Importing necessary libraries and packages
+```
+import numpy as np              
+import matplotlib.pyplot as plt 
+import pandas as pd
 
+import string
+from collections import Counter
+import matplotlib.pyplot as plt
+import nltk
+
+from nltk.corpus import stopwords
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.sentiment import SentimentAnalyzer
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('vader_lexicon')
 ```
 
+Reading dataset which is exported in csv format from postgresql database.<br>
+Basically, four data labels category_id, app_id, content and date information are needed 
 ```
+raw_dataset = pd.read_csv('data/reviews.csv')
+reviews_dataset = raw_dataset[["category_id", "app_id", "content", "date"]]
+```
+
+The main calculateAverage(dataset) function is designed for calculation of average sentiment compound score for given dataset.
+In this part, we use SentimentAnalyzer() function of NLTK. <br>
+
+The process is consisting of operations which are listed below;
+
+* Lowercasing the words
+* Tokenizing words
+* Creating a final sentence without stop words
+* Getting polarity scores of SentimentIntensityAnalyser for each sentence.
+
+At that point, we use compound score for defining user sentiment score. 
+
+```
+def calculateAverage(dataset):
+    reviews_dataset_date2 = dataset
+    count_row = reviews_dataset_date2.shape[0]
+    #reviews_dataset.head(100)
+    #print(count_row)
+    reviews_dataset_date2.head(100)
+    
+    review_list = reviews_dataset_date2["content"]
+    cleaned_review_list = []
+
+    for review in review_list:
+        #review_lower_case = review.lower()
+        review_cleaned_text = str(review).translate(str.maketrans('', '', string.punctuation))
+        tokenized_words = word_tokenize(review_cleaned_text, "english")
+        final_words = []
+        for word in tokenized_words:
+            if word not in stopwords.words('english'):
+                final_words.append(word)
+
+        final_sentence = ""    
+
+        for word in final_words:
+          final_sentence = final_sentence + word + " "
+
+        cleaned_review_list.append(final_sentence)
+
+    cleaned_review_dataframe = pd.DataFrame(cleaned_review_list, columns=['content'])
+    #print(cleaned_review_dataframe.shape[0])
+    #cleaned_review_dataframe.head(10)
+
+    sia = SentimentIntensityAnalyzer()
+
+    result_list = []
+
+    for final_review in cleaned_review_list:
+        result = sia.polarity_scores(final_review)
+        result_list.append(result)
+
+    len(result_list)  
+
+
+    total = 0
+    counter = 0
+    for result in result_list:
+         total += result['compound']
+         counter = counter + 1 
+
+    if(counter == 0):
+        print("Warning....")
+        return 0
+    
+    average = total / counter
+    return average
+```
+
+There are more coding part to handle each application and category. We do not add all <br>
+code pieces in a documentation, all code parts and results are shown in shared Jupyter notebook or html output of notebook.
+
+## Result And Discussion
 
 
 
