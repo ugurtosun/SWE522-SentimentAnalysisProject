@@ -52,11 +52,10 @@ In our work, each application category consisting of three application as listed
 
 ## Data Collection
 
-In the data collection part of project, we do not use a ready dataset. We prepared the dataset with collecting data from App Store. For this purpose, an open source API (https://data.42matters.com/api/v2.0/ios/apps/reviews) was used to fetch application reviews with respecting date. With fetching data from API, we wrote these application reviews to Postgresql database. The java project which was developed to handle data preparation is available with link in below; 
-Also project would be shared with project files.
+In the data collection part of project, we do not use a ready dataset. We prepared the dataset with collecting data from App Store. For this purpose, an open source API (https://data.42matters.com/api/v2.0/ios/apps/reviews) was used to fetch application reviews with respecting date. With fetching data from API, we wrote these application reviews to Postgresql database. The java project which was developed to handle data preparation will be shared with project files.
 
 ```
-https://github.com/ugurtosun/SentimentAnalysisDataCollection
+https://github.com/ugurtosun/SWE522-SentimentAnalysisProject
 ```
 
 In the database columns are;
