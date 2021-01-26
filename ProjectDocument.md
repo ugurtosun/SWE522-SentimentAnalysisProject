@@ -192,7 +192,9 @@ def calculateAverage(dataset):
 There are more coding part to handle each application and category. We do not add all <br>
 code pieces in a documentation, all code parts and results are shown in shared Jupyter notebook or html output of notebook.
 
-## Result And Discussion
+## Results And Discussion
+
+### Results for individual apps
 
 ![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.jpg?raw=true)
 
@@ -202,12 +204,37 @@ code pieces in a documentation, all code parts and results are shown in shared J
 
 ![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/whatsapp.jpg?raw=true)
 
-![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.jpg?raw=true)
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/facebook.jpg?raw=true)
 
-![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.jpg?raw=true)
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/messenger.jpg?raw=true)
 
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/hulu.jpg?raw=true)
 
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/roblox.jpg?raw=true)
 
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/spotify.jpg?raw=true)
 
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/outlook.jpg?raw=true)
 
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/googledocs.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/googledrive.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/ubereats.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/wish.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/googlemaps.jpg?raw=true)
+
+### Results for application categories
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/food&shopping.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/photo&video.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/productivity.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/entertainment.jpg?raw=true)
+
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/social-networking.jpg?raw=true)
 
