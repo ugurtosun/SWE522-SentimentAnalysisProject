@@ -194,6 +194,7 @@ code pieces in a documentation, all code parts and results are shown in shared J
 
 ## Result And Discussion
 
+![alt text](http://github.com/ugurtosun/SentimentAnalysisDataCollection/blob/master/assets/pinterest.png?raw=true)
 
 
 
